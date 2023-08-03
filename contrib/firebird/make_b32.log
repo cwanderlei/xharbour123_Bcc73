@@ -1,0 +1,35 @@
+MAKE Version 5.41  Copyright (c) 1987, 2014 Embarcadero Technologies, Inc.
+	bcc32  -c -O2 -Iinclude;..\..\include -I\include -DHB_OS_WIN_32_USED -oobj\b32\firebird.obj firebird.c
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+Warning W8123: Path '\include' not found - path ignored in option '-I'
+firebird.c:
+Error E2293 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 79: ) expected
+Error E2293 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 80: ) expected
+Error E2293 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 81: ) expected
+Error E2293 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 83: ) expected
+Error E2293 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 88: ) expected
+Error E2147 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 89: 'time_t' cannot start a parameter declaration
+Error E2303 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 89: Type name expected
+Error E2293 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 90: ) expected
+Error E2293 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 91: ) expected
+Error E2141 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 93: Declaration syntax error
+Error E2293 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 102: ) expected
+Error E2147 ..\..\..\BORLAND\BCC73\include\windows\crtl\time.h 126: 'time_t' cannot start a parameter declaration
+Error E2209 firebird.c 60: Unable to open include file 'ibase.h'
+Error E2451 firebird.c 70: Undefined symbol 'isc_db_handle' in function FB_db_handle_release
+Error E2451 firebird.c 70: Undefined symbol 'ph' in function FB_db_handle_release
+Error E2188 firebird.c 70: Expression syntax in function FB_db_handle_release
+Error E2451 firebird.c 75: Undefined symbol 'ISC_STATUS_ARRAY' in function FB_db_handle_release
+Error E2379 firebird.c 75: Statement missing ; in function FB_db_handle_release
+Error E2451 firebird.c 78: Undefined symbol 'status' in function FB_db_handle_release
+Warning W8065 firebird.c 78: Call to function 'isc_detach_database' with no prototype in function FB_db_handle_release
+Warning W8057 firebird.c 83: Parameter 'Cargo' is never used in function FB_db_handle_release
+Error E2141 firebird.c 85: Declaration syntax error
+Error E2147 firebird.c 91: 'isc_db_handle' cannot start a parameter declaration
+Error E2451 firebird.c 95: Undefined symbol 'isc_db_handle' in function hb_FB_db_handle_ret
+Error E2451 firebird.c 95: Undefined symbol 'ph' in function hb_FB_db_handle_ret
+Error E2188 firebird.c 95: Expression syntax in function hb_FB_db_handle_ret
+Error E2141 firebird.c 106: Declaration syntax error
+*** 25 errors in Compile ***
+
+** error 2 ** deleting obj\b32\firebird.obj

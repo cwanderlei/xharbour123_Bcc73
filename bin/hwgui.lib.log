@@ -1,0 +1,648 @@
+
+Type: C >>>harbour.exe -o"xbp\barcode.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\barcode.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\barcode.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\barcode.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\barcode.c:
+
+Type: C >>>harbour.exe -o"xbp\drawwidg.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\drawwidg.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\drawwidg.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\drawwidg.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\drawwidg.c:
+
+Type: C >>>harbour.exe -o"xbp\errorsys.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\errorsys.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\errorsys.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\errorsys.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\errorsys.c:
+
+Type: C >>>harbour.exe -o"xbp\guimain.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\guimain.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\guimain.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\guimain.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\guimain.c:
+
+Type: C >>>harbour.exe -o"xbp\hanimat.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hanimat.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hanimat.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hanimat.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hanimat.c:
+
+Type: C >>>harbour.exe -o"xbp\hbrowse.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hbrowse.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hbrowse.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hbrowse.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hbrowse.c:
+
+Type: C >>>harbour.exe -o"xbp\hcheck.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hcheck.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hcheck.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hcheck.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hcheck.c:
+
+Type: C >>>harbour.exe -o"xbp\hcombo.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hcombo.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hcombo.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hcombo.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hcombo.c:
+
+Type: C >>>harbour.exe -o"xbp\hcontrol.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hcontrol.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hcontrol.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hcontrol.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hcontrol.c:
+
+Type: C >>>harbour.exe -o"xbp\hcwindow.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hcwindow.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hcwindow.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hcwindow.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hcwindow.c:
+
+Type: C >>>harbour.exe -o"xbp\hdatepic.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hdatepic.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hdatepic.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hdatepic.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hdatepic.c:
+
+Type: C >>>harbour.exe -o"xbp\hdc.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hdc.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hdc.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hdc.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hdc.c:
+
+Type: C >>>harbour.exe -o"xbp\hdialog.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hdialog.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hdialog.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hdialog.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hdialog.c:
+
+Type: C >>>harbour.exe -o"xbp\hedit.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hedit.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hedit.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hedit.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hedit.c:
+
+Type: C >>>harbour.exe -o"xbp\hfreeimg.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hfreeimg.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hfreeimg.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hfreeimg.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hfreeimg.c:
+
+Type: C >>>harbour.exe -o"xbp\hfrmtmpl.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hfrmtmpl.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hfrmtmpl.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hfrmtmpl.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hfrmtmpl.c:
+
+Type: C >>>harbour.exe -o"xbp\hgraph.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hgraph.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hgraph.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hgraph.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hgraph.c:
+
+Type: C >>>harbour.exe -o"xbp\hgrid.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hgrid.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hgrid.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hgrid.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hgrid.c:
+
+Type: C >>>harbour.exe -o"xbp\hgridex.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hgridex.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hgridex.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hgridex.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hgridex.c:
+
+Type: C >>>harbour.exe -o"xbp\hhyper.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hhyper.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hhyper.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hhyper.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hhyper.c:
+
+Type: C >>>harbour.exe -o"xbp\hipedit.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hipedit.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hipedit.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hipedit.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hipedit.c:
+
+Type: C >>>harbour.exe -o"xbp\hlistbox.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hlistbox.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hlistbox.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hlistbox.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hlistbox.c:
+
+Type: C >>>harbour.exe -o"xbp\hmonthc.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hmonthc.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hmonthc.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hmonthc.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hmonthc.c:
+
+Type: C >>>harbour.exe -o"xbp\hnice.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hnice.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hnice.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hnice.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hnice.c:
+
+Type: C >>>harbour.exe -o"xbp\hownbtn.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hownbtn.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hownbtn.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hownbtn.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hownbtn.c:
+
+Type: C >>>harbour.exe -o"xbp\hpager.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hpager.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hpager.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hpager.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hpager.c:
+
+Type: C >>>harbour.exe -o"xbp\hpanel.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hpanel.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hpanel.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hpanel.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hpanel.c:
+
+Type: C >>>harbour.exe -o"xbp\hprinter.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hprinter.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hprinter.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hprinter.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hprinter.c:
+
+Type: C >>>harbour.exe -o"xbp\hprogres.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hprogres.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hprogres.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hprogres.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hprogres.c:
+
+Type: C >>>harbour.exe -o"xbp\hradio.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hradio.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hradio.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hradio.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hradio.c:
+
+Type: C >>>harbour.exe -o"xbp\hrebar.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hrebar.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hrebar.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hrebar.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hrebar.c:
+
+Type: C >>>harbour.exe -o"xbp\hrect.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hrect.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hrect.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hrect.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hrect.c:
+
+Type: C >>>harbour.exe -o"xbp\hriched.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hriched.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hriched.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hriched.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hriched.c:
+
+Type: C >>>harbour.exe -o"xbp\hsayimg.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hsayimg.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hsayimg.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hsayimg.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hsayimg.c:
+
+Type: C >>>harbour.exe -o"xbp\hshbtn.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hshbtn.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hshbtn.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hshbtn.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hshbtn.c:
+
+Type: C >>>harbour.exe -o"xbp\hsplash.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hsplash.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hsplash.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hsplash.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hsplash.c:
+
+Type: C >>>harbour.exe -o"xbp\hsplit.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hsplit.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hsplit.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hsplit.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hsplit.c:
+
+Type: C >>>harbour.exe -o"xbp\htab.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\htab.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\htab.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\htab.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\htab.c:
+
+Type: C >>>harbour.exe -o"xbp\htimer.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\htimer.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\htimer.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\htimer.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\htimer.c:
+
+Type: C >>>harbour.exe -o"xbp\htool.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\htool.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\htool.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\htool.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\htool.c:
+
+Type: C >>>harbour.exe -o"xbp\htrackbr.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\htrackbr.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\htrackbr.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\htrackbr.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\htrackbr.c:
+
+Type: C >>>harbour.exe -o"xbp\htree.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\htree.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\htree.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\htree.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\htree.c:
+
+Type: C >>>harbour.exe -o"xbp\hupdown.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hupdown.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hupdown.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hupdown.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hupdown.c:
+
+Type: C >>>harbour.exe -o"xbp\hwindow.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hwindow.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hwindow.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hwindow.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hwindow.c:
+
+Type: C >>>harbour.exe -o"xbp\hwinprn.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\hwinprn.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\hwinprn.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\hwinprn.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\hwinprn.c:
+
+Type: C >>>harbour.exe -o"xbp\menu.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\menu.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\menu.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\menu.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\menu.c:
+
+Type: C >>>harbour.exe -o"xbp\printdos.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\printdos.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\printdos.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\printdos.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\printdos.c:
+
+Type: C >>>harbour.exe -o"xbp\repexec.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\repexec.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\repexec.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\repexec.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\repexec.c:
+
+Type: C >>>harbour.exe -o"xbp\richtext.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\richtext.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\richtext.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\richtext.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\richtext.c:
+
+Type: C >>>harbour.exe -o"xbp\tmci.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\tmci.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\tmci.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\tmci.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\tmci.c:
+
+Type: C >>>harbour.exe -o"xbp\video.c" -m -n -pOxbp\ -q -gc0  -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include"  -I"D:\xharbour123_Bcc73\include" "\hwgui\source\video.prg"<<<
+
+xHarbour 1.2.3 Intl. (SimpLex) (Build 20180529)
+Copyright 1999-2018, http://www.xharbour.org http://www.harbour-project.org/
+
+Type: C >>>bcc32.exe -o"xbp\video.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "xbp\video.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+xbp\video.c:
+
+Type: C >>>bcc32.exe -o"xbp\animat.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\animat.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\animat.c:
+
+Type: C >>>bcc32.exe -o"xbp\c_ipaddr.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\c_ipaddr.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\c_ipaddr.c:
+
+Type: C >>>bcc32.exe -o"xbp\commond.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\commond.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\commond.c:
+
+Type: C >>>bcc32.exe -o"xbp\control.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\control.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\control.c:
+
+Type: C >>>bcc32.exe -o"xbp\cxshade.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\cxshade.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\cxshade.c:
+
+Type: C >>>bcc32.exe -o"xbp\dialog.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\dialog.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\dialog.c:
+
+Type: C >>>bcc32.exe -o"xbp\draw.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\draw.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\draw.c:
+
+Type: C >>>bcc32.exe -o"xbp\drawtext.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\drawtext.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\drawtext.c:
+
+Type: C >>>bcc32.exe -o"xbp\freeimg.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\freeimg.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\freeimg.c:
+
+Type: C >>>bcc32.exe -o"xbp\grid.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\grid.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\grid.c:
+
+Type: C >>>bcc32.exe -o"xbp\listbox.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\listbox.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\listbox.c:
+
+Type: C >>>bcc32.exe -o"xbp\media_c.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\media_c.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\media_c.c:
+
+Type: C >>>bcc32.exe -o"xbp\menu_c.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\menu_c.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\menu_c.c:
+
+Type: C >>>bcc32.exe -o"xbp\message.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\message.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\message.c:
+
+Type: C >>>bcc32.exe -o"xbp\misc.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\misc.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\misc.c:
+
+Type: C >>>bcc32.exe -o"xbp\nice.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\nice.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\nice.c:
+
+Type: C >>>bcc32.exe -o"xbp\pager.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\pager.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\pager.c:
+
+Type: C >>>bcc32.exe -o"xbp\prnalone.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\prnalone.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\prnalone.c:
+
+Type: C >>>bcc32.exe -o"xbp\resource.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\resource.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\resource.c:
+
+Type: C >>>bcc32.exe -o"xbp\richedit.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\richedit.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\richedit.c:
+
+Type: C >>>bcc32.exe -o"xbp\shellapi.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\shellapi.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\shellapi.c:
+
+Type: C >>>bcc32.exe -o"xbp\theme.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\theme.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\theme.c:
+
+Type: C >>>bcc32.exe -o"xbp\window.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\window.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\window.c:
+
+Type: C >>>bcc32.exe -o"xbp\winreg.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\winreg.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\winreg.c:
+
+Type: C >>>bcc32.exe -o"xbp\wprint.obj" -c   -I"D:\xharbour123_Bcc73\include" -I"D:\hwgui\include" -I"D:\xharbour123_Bcc73\include" -tWM "\hwgui\source\wprint.c"<<<
+
+Embarcadero C++ 7.30 for Win32 Copyright (c) 1993-2017 Embarcadero Technologies, Inc.
+\hwgui\source\wprint.c:
+
+Type: C >>>tlib.exe   "lib\hwgui.lib" +"xbp\barcode.obj" +"xbp\drawwidg.obj" +"xbp\errorsys.obj" +"xbp\guimain.obj" +"xbp\hanimat.obj" +"xbp\hbrowse.obj" +"xbp\hcheck.obj" +"xbp\hcombo.obj" +"xbp\hcontrol.obj" +"xbp\hcwindow.obj" +"xbp\hdatepic.obj" +"xbp\hdc.obj" +"xbp\hdialog.obj" +"xbp\hedit.obj" +"xbp\hfreeimg.obj" +"xbp\hfrmtmpl.obj" +"xbp\hgraph.obj" +"xbp\hgrid.obj" +"xbp\hgridex.obj" +"xbp\hhyper.obj" +"xbp\hipedit.obj" +"xbp\hlistbox.obj" +"xbp\hmonthc.obj" +"xbp\hnice.obj" +"xbp\hownbtn.obj" +"xbp\hpager.obj" +"xbp\hpanel.obj" +"xbp\hprinter.obj" +"xbp\hprogres.obj" +"xbp\hradio.obj" +"xbp\hrebar.obj" +"xbp\hrect.obj" +"xbp\hriched.obj" +"xbp\hsayimg.obj" +"xbp\hshbtn.obj" +"xbp\hsplash.obj" +"xbp\hsplit.obj" +"xbp\htab.obj" +"xbp\htimer.obj" +"xbp\htool.obj" +"xbp\htrackbr.obj" +"xbp\htree.obj" +"xbp\hupdown.obj" +"xbp\hwindow.obj" +"xbp\hwinprn.obj" +"xbp\menu.obj" +"xbp\printdos.obj" +"xbp\repexec.obj" +"xbp\richtext.obj" +"xbp\tmci.obj" +"xbp\video.obj" +"xbp\animat.obj" +"xbp\c_ipaddr.obj" +"xbp\commond.obj" +"xbp\control.obj" +"xbp\cxshade.obj" +"xbp\dialog.obj" +"xbp\draw.obj" +"xbp\drawtext.obj" +"xbp\freeimg.obj" +"xbp\grid.obj" +"xbp\listbox.obj" +"xbp\media_c.obj" +"xbp\menu_c.obj" +"xbp\message.obj" +"xbp\misc.obj" +"xbp\nice.obj" +"xbp\pager.obj" +"xbp\prnalone.obj" +"xbp\resource.obj" +"xbp\richedit.obj" +"xbp\shellapi.obj" +"xbp\theme.obj" +"xbp\window.obj" +"xbp\winreg.obj" +"xbp\wprint.obj" <<<
+
+TLIB 6.4 Copyright (c) 1987-2014 Embarcadero Technologies, Inc.
+Warning: public '_HB_FUN_PRINTSETUP' in module 'prnalone' clashes with prior module 'commond'
+Warning: public '_HB_FUN_DELETEDC' in module 'prnalone' clashes with prior module 'drawtext'
+Warning: public '_HB_FUN_DRAWTEXT' in module 'prnalone' clashes with prior module 'drawtext'
+Warning: public '_HB_FUN_GETDEVICEAREA' in module 'wprint' clashes with prior module 'prnalone'
+Warning: public '_HB_FUN_PRINTSETUP' in module 'prnalone' clashes with prior module 'commond'
+Warning: public '_HB_FUN_DELETEDC' in module 'prnalone' clashes with prior module 'drawtext'
+Warning: public '_HB_FUN_DRAWTEXT' in module 'prnalone' clashes with prior module 'drawtext'
+Warning: public '_HB_FUN_GETDEVICEAREA' in module 'wprint' clashes with prior module 'prnalone'
+Warning: library was too large for page size, rebuilt with page size 32

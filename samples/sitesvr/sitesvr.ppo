@@ -1,0 +1,731 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GLOBAL g_nUserCount
+GLOBAL g_nTotalCount
+GLOBAL MutexDB
+GLOBAL MutexCount
+EXTERN BuildDBF
+
+PROCEDURE Main( cPort)
+   LOCAL GetList
+   LOCAL socket
+   LOCAL Key
+   LOCAL cCommand
+   LOCAL hView, hAccept
+
+   BuildDBF()
+
+   IF Empty( cPort ) .OR. Val( cPort ) == 0
+      cPort := "8085"
+   ENDIF
+
+   GetList := {}
+   g_nUserCount  := 0
+   g_nTotalCount := 0
+
+   MutexDB := HB_MutexCreate()
+   MutexCount := HB_MutexCreate()
+
+   Scroll() ; SetPos(0,0)
+
+
+
+
+
+
+
+
+   dbSelectArea( "1" )
+   dbUseArea( .F.,, "site.dbf",, if(.F. .OR. .F., !.F., NIL), .F.,, ) ; dbSetIndex( "site01.ntx" ) ; dbSetIndex( "site02.ntx" )
+
+   DevPos( 1, 15 ) ; DevOut( "Welcome to Giancarlo Niccolai's xHarbour WEB SERVER" )
+
+   InetInit()
+
+   Socket := InetServer( val( cPort) )
+
+   DevPos( 3, 10 ) ; DevOut( "Waiting for connections on port " + cport )
+
+
+
+   hView   := StartThread( @ViewUpdate(), Socket )
+   hAccept := StartThread( @AcceptIncoming(), Socket )
+
+   while .T.
+      cCommand := Space( 50 )
+
+
+      DevPos( 5, 5 ) ; DevOut( "Enter Command      : " ) ; SetPos( Row(), Col() + 1 ) ; AAdd( GetList, _GET_( cCommand, "cCommand",,, ) ) ; ATail(GetList):Display()
+
+      ReadModal( GetList, NIL,,,,, ) ; GetList := {} ; ( GetList )
+
+      cCommand := Trim( cCommand )
+
+      IF Upper( cCommand ) == "QUIT"
+         StopThread( hView )
+
+         InetClose( Socket )
+         StopThread( hAccept )
+         EXIT
+      ENDIF
+   ENDDO
+
+
+   WaitForThreads()
+   InetClose( Socket )
+   InetCleanup()
+   DestroyMutex( MutexDB )
+   DestroyMutex( MutexCount )
+
+   dbCloseAll() ; dbSelectArea( "1" ) ; __SetFormat(NIL)
+
+RETURN
+
+
+
+
+
+PROCEDURE ViewUpdate( Socket )
+
+   LOCAL nRow, nCol
+   LOCAL nProgress
+
+   TraceLog( Socket )
+
+   nProgress := 0
+
+   while .T.
+
+
+
+
+      nRow := Row()
+      nCol := Col()
+
+      Looping( @nProgress, 6, 5 )
+
+      DevPos( 6, 9 ) ; DevOut( "Looping " )
+
+      DevPos( 7, 5 ) ; DevOut( "Main socket status : " + InetErrorDesc( Socket ) +  "(" + Trim( Str( InetErrorCode( Socket ) ) ) + ")" )
+      HB_MutexLock( MutexCount )
+      DevPos( 8, 5 ) ; DevOut( "Connected Users    : " + Str( g_nUserCount ) )
+      DevPos( 9, 5 ) ; DevOut( "Total users        : " + Str( g_nTotalCount ) )
+      HB_MutexUnlock( MutexCount )
+
+      Scroll( nRow, nCol, nRow ) ; SetPos( nRow, nCol )
+
+
+      ThreadSleep( 100 )
+   ENDDO
+
+RETURN
+
+
+
+
+
+PROCEDURE AcceptIncoming( Socket )
+
+   LOCAL Com
+
+   TraceLog( Socket )
+
+   while .T.
+      Com := InetAccept( Socket )
+
+      IF Com <> NIL
+         HB_MutexLock( MutexCount )
+         g_nUserCount++
+         g_nTotalCount++
+         HB_MutexUnlock( MutexCount )
+
+         StartThread( @ServeClient(), com )
+         HB_GcAll( .T. )
+      ELSE
+         QOut( "Catched error ", InetErrorCode( Socket ), InetErrorDesc( Socket ) )
+
+      ENDIF
+   ENDDO
+
+RETURN
+
+
+
+
+
+
+
+PROCEDURE ServeClient( Socket )
+   LOCAL cRequest
+   LOCAL cLine
+   LOCAL aFields
+   LOCAL cPostData := ""
+
+   LOCAL nLength   := 0
+   LOCAL nContLen  := 0
+
+   aFields := {}
+
+
+   cRequest := InetRecvLine( Socket, @nLength )
+   IF nLength < 0
+      HB_MutexLock( MutexCount )
+      g_nUserCount--
+      HB_MutexUnlock( MutexCount )
+      RETURN
+   ENDIF
+
+
+   dbSelectArea( "1" )
+
+
+   WHILE .T.
+      cLine := InetRecvLine( Socket, @nLength )
+
+      IF nLength == 0
+         EXIT
+      ENDIF
+
+
+      IF nLength > 1
+         AAdd( @aFields, cLine )
+
+         IF At( "CONTENT-LENGTH:", Upper( cLine ) ) == 1
+            cLine    := Substr( cLine, At( ":", cLine)+1 )
+            nContLen := Val( cLine )
+         ENDIF
+      ELSE
+
+         HB_MutexLock( MutexCount )
+         g_nUserCount--
+         HB_MutexUnlock( MutexCount )
+         RETURN
+      ENDIF
+   ENDDO
+
+
+   IF nContLen > 0
+
+      cPostData := Space( nContLen )
+      IF InetRecvAll( Socket, @cPostData, nContLen ) <= 0
+         HB_MutexLock( MutexCount )
+         g_nUserCount--
+         HB_MutexUnlock( MutexCount )
+         RETURN
+      ENDIF
+   ENDIF
+
+
+   ProcessRequest( Socket, @cRequest, @aFields, cPostData )
+
+   InetClose( Socket )
+   HB_MutexLock( MutexCount )
+   g_nUserCount--
+   HB_MutexUnlock( MutexCount )
+
+RETURN
+
+
+
+
+
+
+PROCEDURE ProcessRequest( Socket, cRequest, aFields, cPostData )
+
+   LOCAL cReply, cField, nR
+   LOCAL nRow, nCol
+
+
+
+
+   nRow := Row()
+   nCol := Col()
+   DevPos( 15, 1 ) ; DevOut( "REQ: " + Substr( cRequest, 0 , 75 ) + Space( 60 ) )
+   DevPos( 16, 1 ) ; DevOut( "CONTENT-LENGTH: " + RTrim( Str( Len( cPostData ) ) ) + Space( 60 ) )
+
+   nR := 12
+
+
+
+
+
+
+
+
+
+
+
+
+   Scroll( nRow, nCol, nRow ) ; SetPos( nRow, nCol )
+
+
+   IF At( "/admin", cRequest ) > 0
+      cReply := CreateReply( 200, "OK", ProcessAdminRequest( cRequest, cPostData ) )
+   ELSE
+      cReply := ProcessFileRequest( cRequest )
+   ENDIF
+
+   InetSendAll( Socket, @cReply )
+RETURN
+
+
+
+
+PROCEDURE ParseRequest( cRequest, cReq, cFile, cSign )
+
+   cReq     := Substr( cRequest, 0, At( " ", cRequest ) -1 )
+   cRequest := Substr( cRequest, At( " ", cRequest ) +1 )
+   cFile    := Substr( cRequest, 0, At( " ", cRequest ) -1 )
+   cSign    := Substr( cRequest, At( " ", cRequest ) +1 )
+RETURN
+
+
+
+
+
+FUNCTION ProcessFileRequest( cRequest )
+   LOCAL cReq, cFile, cSign, cFileOrig
+   LOCAL nLocId, cLocName, cReply
+
+   ParseRequest( cRequest, @cReq, @cFile, @cSign )
+
+
+   HB_MutexLock( MutexDB )
+
+
+   ordSetFocus( 2 )
+
+
+   nLocId    := 0
+   cFileOrig := cFile
+
+   while Len( cFile ) > 0
+
+      IF At( "/", cFile ) > 0
+         cLocName := Substr( cFile, 1, At( "/", cFile ) -1 )
+      ELSE
+         cLocName := cFile
+      ENDIF
+
+      IF cLocName == ""
+         if nLocId == 0
+
+            cLocName := "ROOT"
+         ELSE
+
+            cFile    := Substr( cFile, 2 )
+            LOOP
+         ENDIF
+      ENDIF
+
+
+
+      dbSeek( Str( nLocId ) + "-" + cLocName, if( .F., .T., NIL ), if( .F., .T., NIL ) )
+
+      IF ! Found()
+         cReply := PageNotFound( cFileOrig )
+         nLocId := -1
+         EXIT
+      ENDIF
+
+      nLocId := field->ID
+
+      IF At( "/", cFile ) > 0
+         cFile := Substr( cFile, At( "/", cFile ) +1 )
+      ELSE
+         cFile := ""
+      ENDIF
+   ENDDO
+
+
+   IF nLocId > 0
+      cReply := CreateReply( 200, "OK", field->CONTENT, field->MIMETYPE )
+   ENDIF
+
+   HB_MutexUnlock( MutexDB )
+
+RETURN cReply
+
+
+
+
+FUNCTION ProcessAdminRequest( cRequest, cPostData )
+   LOCAL cReq, cFile, cSign
+   LOCAL cReply := ""
+   LOCAL nID, nPos, cFields, aFields
+
+   ParseRequest( cRequest, @cReq, @cFile, @cSign )
+
+   nPos := At( "?ID=", cFile )
+   IF nPos > 0
+      nID   := Val( Substr( cFile, nPos + 4 ) )
+      cFile := Substr( cFile, 1, nPos -1 )
+   ELSE
+      nID   := -1
+   ENDIF
+
+
+   DO CASE
+      CASE cFile == "/admin"
+           cReply := AdminFrontPage()
+
+      CASE cFile == "/admin/new"
+           cReply := AdminEditPageMask( -nID )
+
+      CASE cFile == "/admin/edit"
+           cReply := AdminEditPageMask( nID )
+
+      CASE cFile == "/admin/del"
+           cReply := AdminDelPage( nID )
+
+      CASE cFile == "/admin/mod"
+           cReply := AdminModPage( cPostData )
+
+   ENDCASE
+
+RETURN cReply
+
+
+
+
+
+FUNCTION AdminFrontPage()
+   LOCAL cReply
+
+
+   cReply := "<HTML><HEAD><TITLE>xHarbour Server Administration</TITLE></HEAD>" + "<BODY><H1>xHarbour Server Administration</H1><H2>Directory structure:</H2>"
+
+
+   HB_MutexLock( MutexDB )
+   ordSetFocus( 1 )
+   dbSeek( 1, if( .F., .T., NIL ), if( .F., .T., NIL ) )
+   AddPageToList( @cReply, 0 )
+   HB_MutexUnlock( MutexDB )
+
+   DrawDBTree( 1, 1, @cReply )
+
+   cReply += "</BODY></HTML> "
+RETURN cReply
+
+PROCEDURE DrawDBTree( nItemID, nLevel, cReply )
+   LOCAL i, nID, nRecno, cID
+
+   HB_MutexLock( MutexDB )
+   cID := AllTrim( Str( nItemID ) )
+
+   ordSetFocus( 2 )
+   dbSeek( Str( nItemID ) + "-", if( .F., .T., NIL ), if( .F., .T., NIL ) )
+
+   while FIELD->PARENT == nItemID
+      nID    := FIELD->ID
+      nRecno := Recno()
+      AddPageToList( @cReply, nLevel )
+      HB_MutexUnlock( MutexDB )
+
+      DrawDBTree( nID, nLevel + 1, @cReply )
+
+      HB_MutexLock( MutexDB )
+      ordSetFocus( 2 )
+      dbGoto(nRecno)
+      dbSkip(1)
+   ENDDO
+
+   HB_MutexUnlock( MutexDB )
+
+
+   FOR i := 1 TO nLevel
+       cReply += "&nbsp;&nbsp;&nbsp;"
+   NEXT
+   cReply += "<a href='/admin/new?ID=" + cID +"'>--&gt;Add a page here</a><BR>"
+
+RETURN
+
+PROCEDURE AddPageToList( cReply, nLevel )
+   LOCAL cID, i
+
+   cID := AllTrim( Str( FIELD->ID ) )
+
+   FOR i := 1 TO nLevel
+       cReply += "&nbsp;&nbsp;&nbsp;"
+   NEXT
+
+
+
+   cReply += AllTrim(FIELD->NAME) + " &nbsp;<a href='/admin/edit?ID=" + cID + "'>&lt;mod&gt;</a>&nbsp;<a href='/admin/del?ID=" + cID + "'>&lt;del&gt;</a><BR>"
+RETURN
+
+
+
+
+
+FUNCTION AdminEditPageMask( nID )
+   LOCAL cReply, cName, cID, nParent
+   LOCAL bFound
+
+   HB_MutexLock( MutexDB )
+   ordSetFocus( 1 )
+
+
+   IF nID < 0
+      dbGoBottom()
+      nParent := -nID
+      nID     := FIELD->ID + 1
+      dbAppend()
+      _FIELD->ID := nID ; _FIELD->PARENT := nParent
+      bFound := .T.
+   ELSE
+      dbSeek( nID, if( .F., .T., NIL ), if( .F., .T., NIL ) )
+      bFound := Found()
+   ENDIF
+
+   cReply := "<HTML><HEAD><TITLE>Modify record</TITLE></HEAD><BODY>"
+
+   IF ! bFound
+      cReply += "<P>ERROR: record not found"
+   ELSE
+      cName  := AllTrim( FIELD->NAME )
+      cID    := AllTrim( Str( nID ) )
+
+
+
+
+      cReply := "<H1>Changing page " +cName + "(" + cID + ")</H1>" + "<FORM ACTION='/admin/mod' METHOD='POST'>" +  "<INPUT TYPE='HIDDEN' NAME='ID' VALUE='" + cID +"'>" + "<P>Page Name: <INPUT NAME='NAME' SIZE='30' MAXLENGTH='30' TYPE='TEXT' VALUE='"+ cName + "'><BR>" + "Page Type: <INPUT NAME='MIMETYPE' SIZE='30' MAXLENGTH='30' TYPE='TEXT' VALUE='"+ AllTrim( FIELD->MIMETYPE ) + "'><BR>"
+
+      IF FIELD->MIMETYPE = "text/plain" .OR. FIELD->MIMETYPE = "text/html" .OR. FIELD->MIMETYPE = "text/xml"   .OR. FIELD->MIMETYPE = ""
+
+
+         cReply += "<P>Change the content:<BR><TEXTAREA ROWS='10' COLS='70' NAME='CONTENT'>" + FIELD->CONTENT + "</TEXTAREA>"
+      ENDIF
+
+      cReply += "<BR><BR><INPUT TYPE='SUBMIT' VALUE='Modify'></FORM>"
+   ENDIF
+
+   HB_MutexUnlock( MutexDB )
+
+
+   cReply += "<BR><HR><BR><a href='/admin'>Return to administration page</a>" + "</BODY></HTML> "
+
+RETURN cReply
+
+
+
+
+
+FUNCTION AdminDelPage( nID )
+   LOCAL cReply
+
+   HB_MutexLock( MutexDB )
+   ordSetFocus( 1 )
+   dbSeek( nID, if( .F., .T., NIL ), if( .F., .T., NIL ) )
+
+   cReply := "<HTML><HEAD><TITLE>Delete page</TITLE></HEAD><BODY>"
+   IF ! Found()
+      cReply += "<P>ERROR: record not found"
+   ELSE
+      dbDelete()
+      __dbPack()
+      cReply += "<P>Record deleted"
+   ENDIF
+
+   HB_MutexUnlock( MutexDB )
+
+
+   cReply += "<BR><HR><BR><a href='/admin'>Return to administration page</a>" + "</BODY></HTML> "
+
+RETURN cReply
+
+
+
+
+FUNCTION AdminModPage( cPostData )
+   LOCAL cReply, cName, nID, cContent, cMimeType
+   LOCAL aFields := ParsePostData( cPostData )
+
+
+   HB_MutexLock( MutexDB )
+   ordSetFocus( 1 )
+   nID := Val( GetPostField( aFields, "ID" ) )
+   dbSeek( nID, if( .F., .T., NIL ), if( .F., .T., NIL ) )
+
+   cReply := "<HTML><HEAD><TITLE>Modify page</TITLE></HEAD><BODY>"
+   IF ! Found()
+      cReply += "<P>ERROR: record not found"
+   ELSE
+      cName     := GetPostField( aFields, "NAME" )
+      cContent  := GetPostField( aFields, "CONTENT" )
+      cMimeType := GetPostField( aFields, "MIMETYPE" )
+
+      IF cName <> NIL
+         _FIELD->NAME := cName
+      ENDIF
+
+      IF cContent <> NIL
+         _FIELD->CONTENT := cContent
+      ENDIF
+
+      IF cMimeType <> NIL
+         _FIELD->MIMETYPE := cMimeType
+      ENDIF
+
+      cReply += "<P>Page has been Changed"
+   ENDIF
+
+   HB_MutexUnlock( MutexDB )
+
+
+   cReply += "<BR><HR><BR><a href='/admin'>Return to administration page</a>" + "</BODY></HTML> "
+
+RETURN cReply
+
+
+
+
+
+FUNCTION ParsePostData( cPostData )
+   LOCAL cField, cValue, cElem
+   LOCAL aFields := {}
+
+   while Len( cPostData ) > 0
+      IF At( "&", cPostData ) > 1
+         cElem     := Substr( cPostData, 1, At( "&", cPostData ) - 1 )
+         cPostData := SubStr( cPostData, At( "&", cPostData) + 1 )
+      ELSE
+         cElem     := cPostData
+         cPostData := ""
+      ENDIF
+      cField := Substr( cElem, 1, At( "=", cElem ) - 1  )
+      cValue := Substr( cElem, At( "=", cElem ) + 1  )
+
+      cValue := URLDecode( cValue )
+
+      AAdd( aFields, { cField, cValue } )
+   ENDDO
+
+RETURN aFields
+
+FUNCTION URLDecode( cStr )
+   LOCAL cRet := "", i, nVal, cCar
+
+   FOR i := 1 TO Len( cStr )
+      DO CASE
+
+         CASE cStr[i] == "+"
+              cRet += " "
+
+         CASE cStr[i] == "%"
+              cCar := UPPER( cStr[i+1] )
+              IF cCar >= "0" .AND. cCar <= "9"
+                 nVal := ( Asc( cCar ) - Asc( "0" ) ) * 16
+              ELSE
+                 nVal := ( Asc( cCar ) - Asc( "A" ) + 10 ) * 16
+              ENDIF
+
+              cCar := UPPER( cStr[i+2] )
+              IF cCar >= "0" .AND. cCar <= "9"
+                 nVal += ( Asc( cCar ) - Asc( "0" ) )
+              ELSE
+                 nVal += Asc( cCar ) - Asc( "A" ) + 10
+              ENDIF
+              cRet += Chr( nVal )
+              i += 2
+
+         OTHERWISE
+              cRet += cStr[i]
+
+      ENDCASE
+   NEXT
+RETURN cRet
+
+FUNCTION GetPostField( aFields, cField )
+   LOCAL cRet := NIL, nPos := 1
+
+   while cRet == NIL .AND. nPos <= Len( aFields )
+      IF aFields[ nPos ][1] == cField
+         cRet := aFields[ nPos ][2]
+      ENDIF
+      nPos ++
+   ENDDO
+RETURN cRet
+
+
+
+
+FUNCTION CreateReply( nCode, cDesc, cContent, cMimeType )
+   LOCAL cReply, CRLF := InetCRLF()
+
+   IF cMimeType == NIL
+      cMimeType := "text/html"
+   ENDIF
+
+
+
+
+
+
+
+   cReply := "HTTP/1.1 "+ AllTrim( Str( nCode ) ) + " " + cDesc + CRLF + "Server: Clipper Server" + CRLF + "Content-Type: " + cMimeType + CRLF + "Pragma: No-Cache" + CRLF + "Content-Length: " + RTrim( Str( Len( cContent ) ) ) + CRLF + CRLF + cContent
+
+RETURN cReply
+
+
+FUNCTION PageDown()
+   LOCAL cContent
+
+
+   cContent := "<HTML><HEAD><TITLE>Page Down</TITLE></HEAD>" +  "<BODY><H1>Sorry</H1><P>We are currently down; retry later</BODY>"
+
+RETURN CreateReply( 501, "Site down", cContent )
+
+FUNCTION PageNotFound( cPage )
+   LOCAL cContent
+
+
+   cContent := "<HTML><HEAD><TITLE>Page NotFound</TITLE></HEAD>" +  "<BODY><H1>Sorry</H1><P>Page " + cPage + " has not been found.</BODY></HTML>"
+
+RETURN CreateReply( 501, "Site down", cContent )
+
+
+
+
+PROCEDURE Looping( nProgress,  nR, nC )
+
+   LOCAL nRow := Row(), nCol := Col()
+
+   IF nProgress > 3 .OR. nProgress < 0
+      nProgress := 0
+   ENDIF
+
+   DevPos( nR, nC ) ; DevOut( "[ ]" )
+   Scroll( nRow, nCol, nRow ) ; SetPos( nRow, nCol )
+
+   DO CASE
+      CASE nProgress == 0
+           DevPos( nR, nC + 1 ) ; DevOut( "-" )
+      CASE nProgress == 1
+           DevPos( nR, nC + 1 ) ; DevOut( "\" )
+      CASE nProgress == 2
+           DevPos( nR, nC + 1 ) ; DevOut( "|" )
+      CASE nProgress == 3
+           DevPos( nR, nC + 1 ) ; DevOut( "/" )
+   ENDCASE
+
+   nProgress++
+
+   Scroll( nRow, nCol, nRow ) ; SetPos( nRow, nCol )
+
+RETURN

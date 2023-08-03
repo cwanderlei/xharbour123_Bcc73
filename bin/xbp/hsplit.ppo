@@ -1,0 +1,178 @@
+#line 112 "D:\xharbour123_Bcc73\include\hbclass.ch"
+   DYNAMIC DivertConstructorCall
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DECLARE HBClass  New( cName AS String, OPTIONAL SuperParams ) AS CLASS HBClass  Create() AS Object  Instance() AS Object  AddClsMethod( cName AS String, @MethodName(), nScope AS Numeric, n2 AS Numeric, n3 AS Numeric )  AddDelegate( cName AS String, cDelegate AS String, cObject AS String, nScope AS Numeric, lPersistent AS LOGICAL )  AddMultiClsData( cType AS String, uVal, nScope AS Numeric, aDatas AS Array OF String )  AddMultiData( cType AS String, uVal, nScope AS Numeric, aDatas AS Array OF String, x AS LOGICAL, lPer AS LOGICAL )  AddMethod( cName AS String, @MethodName(), nScope AS Numeric, lPersistent AS LOGICAL )  AddInLine( cName AS String, bBlock AS CodeBlock, nScope AS Numeric, lPersistent AS LOGICAL )  AddVirtual( cName AS String )  ModMethod( cName AS String, @MethodName(), nScope AS Numeric, lPersistent AS LOGICAL )  ModClsMethod( cName AS String, @MethodName(), nScope AS Numeric )  ModInline( cName AS String, bBlock AS CodeBlock, nScope AS Numeric, lPersistent AS LOGICAL )  SetOnError( @MethodName() )
+#line 16 "\hwgui\source\hsplit.prg"
+_HB_CLASS HSplitter ; UTILITY FUNCTION HSplitter(...); static s_oClass ; local oClassInstance ; local nScope ; nScope := 1 ; ( nScope ) ; if s_oClass == NIL ; s_oClass := IIF(.F.,, HBClass():New( "HSplitter" , {HControl():classh} ) ) ; ;
+
+_HB_MEMBER { winclass} ; IIF( !.F., s_oClass:AddMultiClsData(, "STATIC", nScope + IIF( .F., 32, 0 ) + IIF( .F., 64, 0 ), { "winclass" }, .F. ), )
+
+   _HB_MEMBER { aLeft} ; IIF( !.F., s_oClass:AddMultiData(,, nScope + IIF( .F., 32, 0 ), { "aLeft" }, .F., .F. ), )
+   _HB_MEMBER { aRight} ; IIF( !.F., s_oClass:AddMultiData(,, nScope + IIF( .F., 32, 0 ), { "aRight" }, .F., .F. ), )
+   _HB_MEMBER { lVertical} ; IIF( !.F., s_oClass:AddMultiData(,, nScope + IIF( .F., 32, 0 ), { "lVertical" }, .F., .F. ), )
+   _HB_MEMBER { hCursor} ; IIF( !.F., s_oClass:AddMultiData(,, nScope + IIF( .F., 32, 0 ), { "hCursor" }, .F., .F. ), )
+   _HB_MEMBER { lCaptured} ; IIF( !.F., s_oClass:AddMultiData(, .F., nScope + IIF( .F., 32, 0 ), { "lCaptured" }, .F., .F. ), )
+   _HB_MEMBER { lMoved} ; IIF( !.F., s_oClass:AddMultiData(, .F., nScope + IIF( .F., 32, 0 ), { "lMoved" }, .F., .F. ), )
+   _HB_MEMBER { bEndDrag} ; IIF( !.F., s_oClass:AddMultiData(,, nScope + IIF( .F., 32, 0 ), { "bEndDrag" }, .F., .F. ), )
+
+
+   _HB_MEMBER New( oWndParent, nId, nLeft, nTop, nWidth, nHeight,  bSize, bDraw, color, bcolor, aLeft, aRight); IIF( .F., s_oClass:ModMethod( "New", @HSplitter_New(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ), s_oClass:AddMethod( "New", @HSplitter_New(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ));
+   _HB_MEMBER Activate(); IIF( .F., s_oClass:ModMethod( "Activate", @HSplitter_Activate(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ), s_oClass:AddMethod( "Activate", @HSplitter_Activate(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ));
+   _HB_MEMBER onEvent( msg, wParam, lParam); IIF( .F., s_oClass:ModMethod( "onEvent", @HSplitter_onEvent(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ), s_oClass:AddMethod( "onEvent", @HSplitter_onEvent(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ));
+   _HB_MEMBER Init(); IIF( .F., s_oClass:ModMethod( "Init", @HSplitter_Init(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ), s_oClass:AddMethod( "Init", @HSplitter_Init(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ));
+   _HB_MEMBER Paint(); IIF( .F., s_oClass:ModMethod( "Paint", @HSplitter_Paint(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ), s_oClass:AddMethod( "Paint", @HSplitter_Paint(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ));
+   _HB_MEMBER Drag( lParam); IIF( .F., s_oClass:ModMethod( "Drag", @HSplitter_Drag(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ), s_oClass:AddMethod( "Drag", @HSplitter_Drag(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ));
+   _HB_MEMBER DragAll(); IIF( .F., s_oClass:ModMethod( "DragAll", @HSplitter_DragAll(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ), s_oClass:AddMethod( "DragAll", @HSplitter_DragAll(), nScope + IIF( .F., 16, 0 ) + IIF( .F., 1024, 0 ), .F. ));
+
+; IF .F. ; __clsActive(s_oClass:hClass) ; s_oClass:Refresh() ; ELSE ; s_oClass:Create() ; END ; oClassInstance := __clsInst( s_oClass:hClass ) ; IF __ObjHasMsg( oClassInstance, "InitClass" ); oClassInstance:InitClass( hb_aParams() ) ; END ; ELSE ; oClassInstance := __clsInst( s_oClass:hClass ) ; END ; IF PCount() > 0 ; DIVERT TO (@DivertConstructorCall()) OF s_oClass ; END ; RETURN oClassInstance AS CLASS HSplitter ;
+
+
+UTILITY STATIC function HSplitter_New( oWndParent, nId, nLeft, nTop, nWidth, nHeight,  bSize, bDraw, color, bcolor, aLeft, aRight) ; local Self AS CLASS HSplitter := QSelf() AS CLASS HSplitter
+
+
+   ::HControl:New( oWndParent, nId, 1073741824 + 268435456 + 13, nLeft, nTop, nWidth, nHeight,,,  bSize, bDraw,, color, bcolor )
+
+   ::title   := ""
+   ::aLeft   := IIf( aLeft == Nil, { }, aLeft )
+   ::aRight  := IIf( aRight == Nil, { }, aRight )
+   ::lVertical := ( ::nHeight > ::nWidth )
+
+   ::Activate()
+
+   RETURN Self
+
+UTILITY STATIC function HSplitter_Activate() ; local Self AS CLASS HSplitter := QSelf() AS CLASS HSplitter
+   IF ! Empty( ::oParent:handle )
+
+      ::handle := CreateStatic( ::oParent:handle, ::id,  ::style, ::nLeft, ::nTop, ::nWidth, ::nHeight )
+      ::Init()
+   ENDIF
+   RETURN Nil
+
+UTILITY STATIC function HSplitter_onEvent( msg, wParam, lParam) ; local Self AS CLASS HSplitter := QSelf() AS CLASS HSplitter
+
+   ( (wParam) := (wParam) )
+
+   IF msg == 512
+      IF ::hCursor == Nil
+         ::hCursor := LoadCursor( IIf( ::lVertical, 32644, 32645 ) )
+      ENDIF
+      Hwg_SetCursor( ::hCursor )
+      IF ::lCaptured
+         ::Drag( lParam )
+      ENDIF
+   ELSEIF msg == 15
+      ::Paint()
+   ELSEIF msg == 513
+      Hwg_SetCursor( ::hCursor )
+      SetCapture( ::handle )
+      ::lCaptured := .T.
+   ELSEIF msg == 514
+      ReleaseCapture()
+      ::DragAll()
+      ::lCaptured := .F.
+      IF ::bEndDrag <> Nil
+         Eval( ::bEndDrag, Self )
+      ENDIF
+   ELSEIF msg == 2
+      ::END()
+   ENDIF
+
+   RETURN - 1
+
+UTILITY STATIC function HSplitter_Init() ; local Self AS CLASS HSplitter := QSelf() AS CLASS HSplitter
+
+   IF ! ::lInit
+      ::HControl:Init()
+      ::nHolder := 1
+      SetWindowObject( ::handle, Self )
+      Hwg_InitWinCtrl( ::handle )
+   ENDIF
+
+   RETURN Nil
+
+UTILITY STATIC function HSplitter_Paint() ; local Self AS CLASS HSplitter := QSelf() AS CLASS HSplitter
+   LOCAL pps, hDC, aCoors, x1, y1, x2, y2
+
+
+   pps := DefinePaintStru()
+   hDC := BeginPaint( ::handle, pps )
+   aCoors := GetClientRect( ::handle )
+   x1 := aCoors[ 1 ] + IIf( ::lVertical, 1, 5 )
+   y1 := aCoors[ 2 ] + IIf( ::lVertical, 5, 1 )
+   x2 := aCoors[ 3 ] - IIf( ::lVertical, 0, 5 )
+   y2 := aCoors[ 4 ] - IIf( ::lVertical, 5, 0 )
+
+   IF ::bPaint <> Nil
+      Eval( ::bPaint, Self )
+   ELSE
+      DrawEdge( hDC, x1, y1, x2, y2, (2 + 4), IIf( ::lVertical, 1, 2 ) )
+   ENDIF
+   EndPaint( ::handle, pps )
+
+   RETURN Nil
+
+UTILITY STATIC function HSplitter_Drag( lParam) ; local Self AS CLASS HSplitter := QSelf() AS CLASS HSplitter
+   LOCAL xPos := LOWORD( lParam ), yPos := HIWORD( lParam )
+
+   IF ::lVertical
+      IF xPos > 32000
+         xPos -= 65535
+      ENDIF
+      ::nLeft += xPos
+   ELSE
+      IF yPos > 32000
+         yPos -= 65535
+      ENDIF
+      ::nTop += yPos
+   ENDIF
+   MoveWindow( ::handle, ::nLeft, ::nTop, ::nWidth, ::nHeight )
+   ::lMoved := .T.
+
+   RETURN Nil
+
+UTILITY STATIC function HSplitter_DragAll() ; local Self AS CLASS HSplitter := QSelf() AS CLASS HSplitter
+   LOCAL i, oCtrl, nDiff
+
+   FOR i := 1 TO Len( ::aRight )
+      oCtrl := ::aRight[ i ]
+      IF ::lVertical
+         nDiff := ::nLeft + ::nWidth - oCtrl:nLeft
+         oCtrl:nLeft += nDiff
+         oCtrl:nWidth -= nDiff
+      ELSE
+         nDiff := ::nTop + ::nHeight - oCtrl:nTop
+         oCtrl:nTop += nDiff
+         oCtrl:nHeight -= nDiff
+      ENDIF
+      oCtrl:Move( oCtrl:nLeft, oCtrl:nTop, oCtrl:nWidth, oCtrl:nHeight )
+   NEXT
+   FOR i := 1 TO Len( ::aLeft )
+      oCtrl := ::aLeft[ i ]
+      IF ::lVertical
+         nDiff := ::nLeft - ( oCtrl:nLeft + oCtrl:nWidth )
+         oCtrl:nWidth += nDiff
+      ELSE
+         nDiff := ::nTop - ( oCtrl:nTop + oCtrl:nHeight )
+         oCtrl:nHeight += nDiff
+      ENDIF
+      oCtrl:Move( oCtrl:nLeft, oCtrl:nTop, oCtrl:nWidth, oCtrl:nHeight )
+   NEXT
+   ::lMoved := .F.
+
+   RETURN Nil

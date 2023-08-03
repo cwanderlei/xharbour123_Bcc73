@@ -1,0 +1,92 @@
+MAKE Version 5.2  Copyright (c) 1987, 2000 Borland
+	D:\Borland\Bcc68\bin\bcc32  -c -O2 -I..\..\include -DHB_OS_WIN_32_USED -o..\..\obj\b32\mysqlrdd.obj ..\..\obj\b32\mysqlrdd.c
+Embarcadero C++ 6.80 for Win32 Copyright (c) 1993-2014 Embarcadero Technologies, Inc.
+..\..\obj\b32\mysqlrdd.c:
+	D:\Borland\Bcc68\bin\tlib ..\..\lib\b32\mysql.lib -+..\..\obj\b32\mysqlrdd.obj,,
+TLIB 6.3 Copyright (c) 1987-2011 Embarcadero Technologies, Inc.
+
+Warning: 'mysqlrdd' not found in library
+	..\..\bin\harbour.exe tmysql.prg -q0 -w -es2 -gc0 -n -i..\..\include -o..\..\obj\b32\tmysql.c
+	D:\Borland\Bcc68\bin\bcc32  -c -O2 -I..\..\include -DHB_OS_WIN_32_USED -o..\..\obj\b32\tmysql.obj ..\..\obj\b32\tmysql.c
+Embarcadero C++ 6.80 for Win32 Copyright (c) 1993-2014 Embarcadero Technologies, Inc.
+..\..\obj\b32\tmysql.c:
+	D:\Borland\Bcc68\bin\tlib ..\..\lib\b32\mysql.lib -+..\..\obj\b32\tmysql.obj,,
+TLIB 6.3 Copyright (c) 1987-2011 Embarcadero Technologies, Inc.
+
+Warning: 'tmysql' not found in library
+	..\..\bin\harbour.exe tsqlbrw.prg -q0 -w -es2 -gc0 -n -i..\..\include -o..\..\obj\b32\tsqlbrw.c
+	D:\Borland\Bcc68\bin\bcc32  -c -O2 -I..\..\include -DHB_OS_WIN_32_USED -o..\..\obj\b32\tsqlbrw.obj ..\..\obj\b32\tsqlbrw.c
+Embarcadero C++ 6.80 for Win32 Copyright (c) 1993-2014 Embarcadero Technologies, Inc.
+..\..\obj\b32\tsqlbrw.c:
+	D:\Borland\Bcc68\bin\tlib ..\..\lib\b32\mysql.lib -+..\..\obj\b32\tsqlbrw.obj,,
+TLIB 6.3 Copyright (c) 1987-2011 Embarcadero Technologies, Inc.
+
+Warning: 'tsqlbrw' not found in library
+	D:\Borland\Bcc68\bin\bcc32  -c -O2 -I..\..\include -DHB_OS_WIN_32_USED -o..\..\obj\b32\mysql.obj mysql.c
+Embarcadero C++ 6.80 for Win32 Copyright (c) 1993-2014 Embarcadero Technologies, Inc.
+mysql.c:
+Error E2209 mysql.c 74: Unable to open include file 'mysql.h'
+Error E2451 mysql.c 87: Undefined symbol 'MYSQL' in function HB_FUN_SQLCONNECT
+Error E2451 mysql.c 87: Undefined symbol 'mysql' in function HB_FUN_SQLCONNECT
+Error E2140 mysql.c 88: Declaration is not allowed here in function HB_FUN_SQLCONNECT
+Error E2140 mysql.c 89: Declaration is not allowed here in function HB_FUN_SQLCONNECT
+Error E2140 mysql.c 90: Declaration is not allowed here in function HB_FUN_SQLCONNECT
+Error E2140 mysql.c 91: Declaration is not allowed here in function HB_FUN_SQLCONNECT
+Error E2451 mysql.c 91: Undefined symbol 'MYSQL_PORT' in function HB_FUN_SQLCONNECT
+Error E2140 mysql.c 92: Declaration is not allowed here in function HB_FUN_SQLCONNECT
+Warning W8065 mysql.c 115: Call to function 'mysql_real_connect' with no prototype in function HB_FUN_SQLCONNECT
+Warning W8004 mysql.c 118: 'flags' is assigned a value that is never used in function HB_FUN_SQLCONNECT
+Warning W8004 mysql.c 118: 'port' is assigned a value that is never used in function HB_FUN_SQLCONNECT
+Warning W8004 mysql.c 118: 'szPass' is assigned a value that is never used in function HB_FUN_SQLCONNECT
+Warning W8004 mysql.c 118: 'szUser' is assigned a value that is never used in function HB_FUN_SQLCONNECT
+Warning W8004 mysql.c 118: 'szHost' is assigned a value that is never used in function HB_FUN_SQLCONNECT
+Error E2451 mysql.c 123: Undefined symbol 'MYSQL' in function HB_FUN_SQLCLOSE
+Error E2188 mysql.c 123: Expression syntax in function HB_FUN_SQLCLOSE
+Error E2451 mysql.c 131: Undefined symbol 'MYSQL' in function HB_FUN_SQLSELECTD
+Error E2188 mysql.c 131: Expression syntax in function HB_FUN_SQLSELECTD
+Warning W8004 mysql.c 132: 'db' is assigned a value that is never used in function HB_FUN_SQLSELECTD
+Error E2451 mysql.c 137: Undefined symbol 'MYSQL' in function HB_FUN_SQLQUERY
+Error E2188 mysql.c 137: Expression syntax in function HB_FUN_SQLQUERY
+Error E2451 mysql.c 143: Undefined symbol 'MYSQL' in function HB_FUN_SQLSTORER
+Error E2188 mysql.c 143: Expression syntax in function HB_FUN_SQLSTORER
+Error E2451 mysql.c 149: Undefined symbol 'MYSQL_RES' in function HB_FUN_SQLFREER
+Error E2188 mysql.c 149: Expression syntax in function HB_FUN_SQLFREER
+Error E2451 mysql.c 156: Undefined symbol 'MYSQL_RES' in function HB_FUN_SQLFETCHR
+Error E2451 mysql.c 156: Undefined symbol 'mresult' in function HB_FUN_SQLFETCHR
+Error E2188 mysql.c 156: Expression syntax in function HB_FUN_SQLFETCHR
+Error E2140 mysql.c 157: Declaration is not allowed here in function HB_FUN_SQLFETCHR
+Warning W8065 mysql.c 157: Call to function 'mysql_num_fields' with no prototype in function HB_FUN_SQLFETCHR
+Error E2140 mysql.c 158: Declaration is not allowed here in function HB_FUN_SQLFETCHR
+Error E2451 mysql.c 159: Undefined symbol 'MYSQL_ROW' in function HB_FUN_SQLFETCHR
+Error E2379 mysql.c 159: Statement missing ; in function HB_FUN_SQLFETCHR
+Error E2140 mysql.c 160: Declaration is not allowed here in function HB_FUN_SQLFETCHR
+Error E2451 mysql.c 165: Undefined symbol 'mrow' in function HB_FUN_SQLFETCHR
+Warning W8065 mysql.c 165: Call to function 'mysql_fetch_row' with no prototype in function HB_FUN_SQLFETCHR
+Warning W8065 mysql.c 166: Call to function 'mysql_fetch_lengths' with no prototype in function HB_FUN_SQLFETCHR
+Warning W8069 mysql.c 166: Nonportable pointer conversion in function HB_FUN_SQLFETCHR
+Error E2451 mysql.c 189: Undefined symbol 'MYSQL_RES' in function HB_FUN_SQLDATAS
+Error E2188 mysql.c 189: Expression syntax in function HB_FUN_SQLDATAS
+Error E2451 mysql.c 197: Undefined symbol 'MYSQL_RES' in function HB_FUN_SQLNROWS
+Error E2188 mysql.c 197: Expression syntax in function HB_FUN_SQLNROWS
+Error E2451 mysql.c 204: Undefined symbol 'MYSQL_FIELD' in function HB_FUN_SQLFETCHF
+Error E2451 mysql.c 204: Undefined symbol 'mfield' in function HB_FUN_SQLFETCHF
+Error E2140 mysql.c 205: Declaration is not allowed here in function HB_FUN_SQLFETCHF
+Error E2451 mysql.c 210: Undefined symbol 'MYSQL_RES' in function HB_FUN_SQLFETCHF
+Error E2188 mysql.c 210: Expression syntax in function HB_FUN_SQLFETCHF
+Error E2451 mysql.c 230: Undefined symbol 'MYSQL_RES' in function HB_FUN_SQLFSEEK
+Error E2188 mysql.c 230: Expression syntax in function HB_FUN_SQLFSEEK
+Error E2451 mysql.c 237: Undefined symbol 'MYSQL_RES' in function HB_FUN_SQLNUMFI
+Error E2188 mysql.c 237: Expression syntax in function HB_FUN_SQLNUMFI
+Error E2451 mysql.c 249: Undefined symbol 'MYSQL' in function HB_FUN_SQLLISTF
+Error E2188 mysql.c 249: Expression syntax in function HB_FUN_SQLLISTF
+Error E2451 mysql.c 255: Undefined symbol 'MYSQL' in function HB_FUN_SQLGETERR
+Error E2188 mysql.c 255: Expression syntax in function HB_FUN_SQLGETERR
+Error E2451 mysql.c 260: Undefined symbol 'MYSQL' in function HB_FUN_SQLGETERRNO
+Error E2188 mysql.c 260: Expression syntax in function HB_FUN_SQLGETERRNO
+Error E2451 mysql.c 265: Undefined symbol 'MYSQL' in function HB_FUN_SQLLISTDB
+Error E2451 mysql.c 265: Undefined symbol 'mysql' in function HB_FUN_SQLLISTDB
+Error E2188 mysql.c 265: Expression syntax in function HB_FUN_SQLLISTDB
+Error E2228 mysql.c 265: Too many error or warning messages in function HB_FUN_SQLLISTDB
+*** 51 errors in Compile ***
+
+** error 2 ** deleting ..\..\obj\b32\mysql.obj

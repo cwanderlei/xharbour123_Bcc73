@@ -1,0 +1,136 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROCEDURE BuildDBF()
+   LOCAL aStruct
+
+
+   IF !File( "site.dbf" )
+
+
+
+
+
+
+
+      aStruct := {                                 { "ID"       , "N", 10, 0 },    { "NAME"     , "C", 50, 0 },    { "PARENT"   , "N", 10, 0 },    { "MIMETYPE" , "C", 30, 0 },    { "CONTENT"  , "M", 10, 0 }     }
+
+      dbCreate( "site.dbf", aStruct )
+
+      dbUseArea( .F.,, "site.dbf",, if(.F. .OR. .F., !.F., NIL), .F.,, )
+      dbCreateIndex( "site01", "field->ID", {|| field->ID}, if( .F., .T., NIL ) )
+      dbCreateIndex( "site02", 'STR( field->PARENT ) + "-" + field->NAME', {|| STR( field->PARENT ) + "-" + field->NAME}, if( .F., .T., NIL ) )
+
+      if !.F. ; ordListClear() ; end ; ordListAdd( "site01" ) ; ordListAdd( "site02" )
+
+      dbAppend()
+      field->id       := 1
+      field->name     := "ROOT"
+      field->parent   := 0
+      field->mimetype := "text/html"
+
+
+
+
+
+
+
+
+
+
+
+
+
+      field->content  := "<HTML>                                                        " + CHR(13)+CHR(10) +  "<HEAD>                                                        " + CHR(13)+CHR(10) +  "<TITLE>xHarbour Server demo site</TITLE>                       " + CHR(13)+CHR(10) +  "<BODY>                                                        " + CHR(13)+CHR(10) +  "    <H1>xHarbour Server Demo Site</H1>                         " + CHR(13)+CHR(10) +  "    <H2>Index</H2>                                            " + CHR(13)+CHR(10) +  "    <UL>                                                      " + CHR(13)+CHR(10) +  '      <LI>An HTML text in this area: <a href="/test">CLICK</A>' + CHR(13)+CHR(10) +  '      <LI>Area 1: <A href="/Area1/">CLICK</a>                 ' + CHR(13)+CHR(10) +  '      <LI>Area 2: <A href="/Area2/">CLICK</a>                 ' + CHR(13)+CHR(10) +  "    </UL>                                                     " + CHR(13)+CHR(10) +  "    <HR>                                                      " + CHR(13)+CHR(10) +  "</BODY>                                                       " + CHR(13)+CHR(10) +  "</HTML>                                                       "
+
+
+      dbAppend()
+      field->id       := 2
+      field->name     := "Area1"
+      field->parent   := 1
+      field->mimetype := "text/html"
+
+
+
+
+
+
+
+
+      field->content  := "<HTML>                                                         " + CHR(13)+CHR(10) +  "<HEAD>                                                         " + CHR(13)+CHR(10) +  "<TITLE>AREA 1</TITLE>                                          " + CHR(13)+CHR(10) +  "</HEAD>                                                        " + CHR(13)+CHR(10) +  "<BODY>                                                         " + CHR(13)+CHR(10) +  "<H2>INDEX area 1</H2>                                          " + CHR(13)+CHR(10) +  '<P>A <a href="test">text file</a> in this area                 ' + CHR(13)+CHR(10) +  "</BODY>                                                        " + CHR(13)+CHR(10) +  "</HTML>                                                        "
+
+      dbAppend()
+      field->id       := 3
+      field->name     := "Area2"
+      field->parent   := 1
+      field->mimetype := "text/html"
+
+
+
+
+
+
+
+      field->content  := "<HTML>                                                         " + CHR(13)+CHR(10) +  "<HEAD>                                                         " + CHR(13)+CHR(10) +  "<TITLE>Area 2</TITLE>                                          " + CHR(13)+CHR(10) +  "<BODY>                                                         " + CHR(13)+CHR(10) +  "<H2>INDEX Area 2</h2>                                          " + CHR(13)+CHR(10) +  '<P>A <a href="test1">text file</a> in this area.               ' + CHR(13)+CHR(10) +  "</BODY>                                                        " + CHR(13)+CHR(10) +  "</HTML>                                                        "
+
+      dbAppend()
+      field->id       := 4
+      field->name     := "test"
+      field->parent   := 1
+      field->mimetype := "text/html"
+
+
+
+
+
+
+
+
+
+      field->content  := "<HTML>                                                         " + CHR(13)+CHR(10) +  "<HEAD>                                                         " + CHR(13)+CHR(10) +  "<TITLE>A demo HTML</TITLE>                                     " + CHR(13)+CHR(10) +  "</HEAD>                                                        " + CHR(13)+CHR(10) +  "                                                               " + CHR(13)+CHR(10) +  "<BODY>                                                         " + CHR(13)+CHR(10) +  "<H2>A demo HTML</H2>                                           " + CHR(13)+CHR(10) +  "<P> Test page under main site                                  " + CHR(13)+CHR(10) +  "</BODY>                                                        " + CHR(13)+CHR(10) +  "</HTML>                                                        "
+
+      dbAppend()
+      field->id       := 6
+      field->name     := "test1"
+      field->parent   := 3
+      field->mimetype := "text/plain"
+      field->content  := "Test Plain text page under area 2"
+
+      dbAppend()
+      field->id       := 7
+      field->name     := "test"
+      field->parent   := 2
+      field->mimetype := "text/html"
+
+
+
+
+
+
+
+
+      field->content  := "<HTML>                                                         " + CHR(13)+CHR(10) +  "<HEAD>                                                         " + CHR(13)+CHR(10) +  "<TITLE>A created page</TITLE>                                  " + CHR(13)+CHR(10) +  "</HEAD>                                                        " + CHR(13)+CHR(10) +  "<BODY>                                                         " + CHR(13)+CHR(10) +  "<H1>A created page</H1>                                        " + CHR(13)+CHR(10) +  "<P>Here it is a new page, created from the web!                " + CHR(13)+CHR(10) +  "</BODY>                                                        " + CHR(13)+CHR(10) +  "</HTML>                                                        "
+
+   ENDIF
+
+RETURN

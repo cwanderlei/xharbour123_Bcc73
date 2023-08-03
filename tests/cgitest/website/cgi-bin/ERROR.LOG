@@ -1,0 +1,315 @@
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 08/02/00<BR>Time : 10:08:33<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error BASE/1081<BR>  Argument error: +
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :1<BR>
+SUBSYSTEM..... :BASE<BR>
+DESCRIPTION...:Argument error<BR>
+OPERATION......:+<BR>
+FILENAME........ :<BR>
+TRIES............. :0
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from (b)HTML(85) <BR>
+Called from obj:WRITELN(0) <BR>
+Called from STRINGERRO(87) <BR>
+Called from GENERROR(25) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 08/02/00<BR>Time : 10:08:30<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error DBCMD/1015<BR>  Argument error: DBUSEAREA
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :1<BR>
+SUBSYSTEM..... :DBCMD<BR>
+DESCRIPTION...:Argument error<BR>
+OPERATION......:DBUSEAREA<BR>
+FILENAME........ :<BR>
+TRIES............. :0
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from DBUSEAREA(0) <BR>
+Called from DBERROR(50) <BR>
+Called from GENERROR(23) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 08/02/00<BR>Time : 09:55:08<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error BASE/1081<BR>  Argument error: +
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :1<BR>
+SUBSYSTEM..... :BASE<BR>
+DESCRIPTION...:Argument error<BR>
+OPERATION......:+<BR>
+FILENAME........ :<BR>
+TRIES............. :0
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from MARQUEE(1552) <BR>
+Called from (b)HTML(147) <BR>
+Called from obj:MARQUEE(0) <BR>
+Called from TESTSPECIA(205) <BR>
+Called from PROCESS(69) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 08/02/00<BR>Time : 09:52:35<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error BASE/1081<BR>  Argument error: +
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :1<BR>
+SUBSYSTEM..... :BASE<BR>
+DESCRIPTION...:Argument error<BR>
+OPERATION......:+<BR>
+FILENAME........ :<BR>
+TRIES............. :0
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from MARQUEE(1555) <BR>
+Called from (b)HTML(140) <BR>
+Called from obj:MARQUEE(0) <BR>
+Called from TESTSPECIA(205) <BR>
+Called from PROCESS(69) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 08/02/00<BR>Time : 09:50:45<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error BASE/1081<BR>  Argument error: +
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :1<BR>
+SUBSYSTEM..... :BASE<BR>
+DESCRIPTION...:Argument error<BR>
+OPERATION......:+<BR>
+FILENAME........ :<BR>
+TRIES............. :0
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from MARQUEE(1555) <BR>
+Called from (b)HTML(140) <BR>
+Called from obj:MARQUEE(0) <BR>
+Called from SIMPLEBROW(152) <BR>
+Called from PROCESS(63) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 28/01/00<BR>Time : 16:46:08<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error BASE/1081<BR>  Argument error: +
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :1<BR>
+SUBSYSTEM..... :BASE<BR>
+DESCRIPTION...:Argument error<BR>
+OPERATION......:+<BR>
+FILENAME........ :<BR>
+TRIES............. :0
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from MARQUEE(1555) <BR>
+Called from (b)HTML(140) <BR>
+Called from obj:MARQUEE(0) <BR>
+Called from TESTSPECIA(205) <BR>
+Called from PROCESS(69) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 27/01/00<BR>Time : 15:39:45<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error BASE/1081<BR>  Argument error: +
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :1<BR>
+SUBSYSTEM..... :BASE<BR>
+DESCRIPTION...:Argument error<BR>
+OPERATION......:+<BR>
+FILENAME........ :<BR>
+TRIES............. :0
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from MARQUEE(1555) <BR>
+Called from (b)HTML(140) <BR>
+Called from obj:MARQUEE(0) <BR>
+Called from SIMPLEBROW(152) <BR>
+Called from PROCESS(63) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 21/01/00<BR>Time : 12:14:41<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error BASE/1081<BR>  Argument error: +
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :1<BR>
+SUBSYSTEM..... :BASE<BR>
+DESCRIPTION...:Argument error<BR>
+OPERATION......:+<BR>
+FILENAME........ :<BR>
+TRIES............. :0
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from MARQUEE(1555) <BR>
+Called from (b)HTML(140) <BR>
+Called from obj:MARQUEE(0) <BR>
+Called from SIMPLEBROW(152) <BR>
+Called from PROCESS(63) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 21/01/00<BR>Time : 12:14:32<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error BASE/1081<BR>  Argument error: +
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :1<BR>
+SUBSYSTEM..... :BASE<BR>
+DESCRIPTION...:Argument error<BR>
+OPERATION......:+<BR>
+FILENAME........ :<BR>
+TRIES............. :0
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from MARQUEE(1555) <BR>
+Called from (b)HTML(140) <BR>
+Called from obj:MARQUEE(0) <BR>
+Called from SIMPLEBROW(152) <BR>
+Called from PROCESS(63) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 21/01/00<BR>Time : 10:59:22<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error BASE/1002<BR>  Alias does not exist: FIXING
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :15<BR>
+SUBSYSTEM..... :BASE<BR>
+DESCRIPTION...:Alias does not exist<BR>
+OPERATION......:FIXING<BR>
+FILENAME........ :<BR>
+TRIES............. :1
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from CLPULL1(413) <BR>
+Called from PROCESS(85) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 21/01/00<BR>Time : 10:50:34<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error BASE/1002<BR>  Alias does not exist: FIXING
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :15<BR>
+SUBSYSTEM..... :BASE<BR>
+DESCRIPTION...:Alias does not exist<BR>
+OPERATION......:FIXING<BR>
+FILENAME........ :<BR>
+TRIES............. :1
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from CLPULL2(458) <BR>
+Called from PROCESS(87) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+
+</TD></TR></TABLE>
+<TABLE bgcolor="white" border CellPadding=1 CellSpacing=1 COLS=2 WIDTH=80%><TR><TD bgcolor="black" align="CENTER"><FONT face = "verdana" size ="5" color="white">
+<B>ERROR REPORT</B></TD></TR><TR><TD bgcolor="blue"><FONT face = "verdana" size ="2" color="white">
+Date : 10/01/00<BR>Time : 12:32:55<BR></TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Error BASE/1081<BR>  Argument error: +
+</EM></TD></TR><TR><TD bgcolor="cyan">
+<FONT face ="verdana" size ="2" color="black">
+ERRORCODE...... :1<BR>
+SUBSYSTEM..... :BASE<BR>
+DESCRIPTION...:Argument error<BR>
+OPERATION......:+<BR>
+FILENAME........ :<BR>
+TRIES............. :0
+</TD></TR><TR><TD bgcolor="red"><FONT face ="verdana" size ="2" color="white">
+<EM>Called from LOCKERRHAN(0) <BR>
+Called from (b)INITHANDL$(0) <BR>
+Called from (b)HTML(85) <BR>
+Called from obj:WRITELN(0) <BR>
+Called from STRINGERRO(87) <BR>
+Called from GENERROR(25) <BR>
+</EM></TD></TR><TR><TD bgcolor="black"><FONT face ="verdana" size ="2" color="white">
+Extra Notes...</TD>
+</TR>
+</TABLE>
+
+

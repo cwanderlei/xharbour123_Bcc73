@@ -1,0 +1,368 @@
+CINI = 
+C_OUTPUTFOLDER = 
+DEFFILE = 
+INCLUDEFOLDERS = D:\hwgui_2_17\include;
+LAUTORUN = 
+LDEBUG = .F.
+LGUI = .F.
+LIBFOLDERS = 
+LMT = .F.
+LNOAUTOFWH = .F.
+LPRG_CLASSICDEBUG = .F.
+LPRG_DEBUG = .F.
+LUSEDLL = .F.
+MAPFILE = 
+MYC_FLAGS = 
+MYDEFINES = 
+MYLINK_FLAGS = 
+MYPRG_FLAGS = 
+MYRC_FLAGS = 
+MYSLY_FLAGS = 
+OUTPUTFOLDER = 
+PRG_OUTPUTFOLDER = 
+RC_OUTPUTFOLDER = 
+RUNARGUMENTS = 
+SLY_OUTPUTFOLDER = 
+STARTIN = 
+TARGETFOLDER = 
+
+[D:\hwgui_2_17\source\barcode.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\drawwidg.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\guimain.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hanimat.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hbrowse.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hcheck.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hcombo.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hcontrol.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hctrlex.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hcwindow.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hdatepic.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hdc.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hdialog.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hedit.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\herrsys.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hfreeimg.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hgraph.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hgrid.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hgridex.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hhyper.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hipedit.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hlistbox.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hmonthc.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hnice.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hownbtn.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hpager.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hpanel.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hprinter.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hprogres.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hradio.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hrebar.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hrect.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hriched.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hsayimg.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hshbtn.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hsplash.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hsplit.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\htab.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\htimer.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\htool.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\htrackbr.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\htree.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hupdown.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hwindow.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\hwinprn.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\menu.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\printdos.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\tmci.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\video.prg]
+MYC_FLAGS = 
+MYDEFINES = 
+MYPRG_FLAGS = 
+
+[D:\hwgui_2_17\source\animat.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\c_ipaddr.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\commond.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\control.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\cxshade.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\dialog.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\draw.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\drawtext.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\freeimg.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\grid.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\listbox.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\media_c.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\menu_c.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\message.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\misc.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\nice.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\pager.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\resource.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\richedit.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\shellapi.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\theme.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\window.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\winreg.c]
+MYC_FLAGS = 
+MYDEFINES = 
+
+[D:\hwgui_2_17\source\wprint.c]
+MYC_FLAGS = 
+MYDEFINES = 

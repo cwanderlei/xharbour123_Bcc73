@@ -1,0 +1,153 @@
+<HTML>
+
+<HEAD>
+<STYLE>
+<!--
+     A:visited {text-decoration:none;color:black;background:none;}
+     A:active {text-decoration:none;color:black;background:none;}
+     A:link {text-decoration:none;color:black;background:none;}
+     A:hover {text-decoration:none;color:white;background:black;}
+-->
+</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript1.2" SRC="resize.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.2" SRC="list.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+
+function initTree() {
+  if(parseInt(navigator.appVersion) < 4) {
+    alert("Sorry, a 4.0+ browser is required to view this demo.");
+    return;
+  }
+  var width = 200, height = 22;
+  var bgColor = "white";   //"#CCCCCC";
+  listSetImages( "true.gif", "false.gif" );
+
+  l = new List(true, width, height, "white");
+  l.setFont("<FONT FACE='Verdana' COLOR='black' SIZE=2'><B>","</B></FONT>");
+
+  m = new List(true, width, height, bgColor);
+        m.setFont("<FONT FACE='Verdana' SIZE=2'>","</FONT>");
+        m.addItem("<A HREF='/cgi-bin/userform.exe?REDIRECT' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Simple Redirection");
+        m.addItem("<A HREF='/cgi-bin/userform.exe?BROWSE' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Table Browse");
+        m.addItem("<A HREF='/cgi-bin/userform.exe?FORMDEMO' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Forms Demo");
+        m.addItem("<A HREF='/cgi-bin/userform.exe?SPECIAL' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Misc Special Features");
+        m.addItem("<A HREF='/cgi-bin/userform.exe?BUTDEMO' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;IE Buttons Demo");
+        m.addItem("<A HREF='/cgi-bin/genError.exe?DATABASE' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Error handling #1");
+        m.addItem("<A HREF='/cgi-bin/genError.exe?STRING' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Error handling #2");
+        m.addItem("<A HREF='/cgi-bin/userform.exe?INSPECTCGI%20param1%20param2%param3' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Object inspector");
+        m.addItem("<A HREF='/cgi-bin/userform.exe?TESTFRAME1' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Frames");
+        m.addItem("<A HREF='/cgi-bin/userform.exe?CLIENTPULL' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Client Pull");
+        m.addItem("<A HREF='/cgi-bin/testcgi.exe' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;TestCGI.exe");
+  l.addList(m, "Welcome");
+
+  o = new List(false, width, height, bgColor);
+    o.setFont("<FONT FACE='Verdana' SIZE=2'>","</FONT>");
+    o.addItem("<A HREF='/cgi-bin/userform.exe?GETUSER' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;User Loggin");
+    o.addItem("<A HREF='/cgi-bin/addbook.exe?BLDPAGE' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Address Book");
+    o.addItem("<A HREF='/cgi-bin/counter.exe' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Simple Counter");
+  l.addList(o, "Applications");
+
+  d = new List(false, width, height, bgColor);
+    d.setFont("<FONT FACE='Verdana' SIZE=2'>","</FONT>");
+    d.addItem("<A HREF='/cgi-bin/userform.exe?AUTOREFRESH' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>AutoRefresh !!!");
+    d.addItem("<A HREF='/cgi-bin/userform.exe?GETUSER' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>User Loggin");
+  l.addList(d, "Javascript integration");
+
+  l.addItem("<A HREF='/cgi-bin/userform.exe?UNDERCONSTRUCTION' TARGET=RightTop><IMG SRC='webpage.jpg' border=0>&nbsp;&nbsp;Under Construction");
+  l.setIndent(5);
+  l.build(5,5);
+}
+
+</SCRIPT>
+
+<STYLE TYPE="text/css">
+#spacer { position: absolute; height: 1120; }
+</STYLE>
+
+<STYLE TYPE="text/css">
+#lItem0 { position:absolute; } 
+#lItem1 { position:absolute; } 
+#lItem2 { position:absolute; } 
+#lItem3 { position:absolute; } 
+#lItem4 { position:absolute; } 
+#lItem5 { position:absolute; } 
+#lItem6 { position:absolute; } 
+#lItem7 { position:absolute; } 
+#lItem8 { position:absolute; } 
+#lItem9 { position:absolute; } 
+#lItem10 { position:absolute; } 
+#lItem11 { position:absolute; } 
+#lItem12 { position:absolute; } 
+#lItem13 { position:absolute; } 
+#lItem14 { position:absolute; } 
+#lItem15 { position:absolute; } 
+#lItem16 { position:absolute; } 
+#lItem17 { position:absolute; } 
+#lItem18 { position:absolute; }
+#lItem19 { position:absolute; }
+#lItem20 { position:absolute; }
+#lItem21 { position:absolute; }
+#lItem22 { position:absolute; }
+#lItem23 { position:absolute; }
+#lItem24 { position:absolute; }
+#lItem25 { position:absolute; }
+
+</STYLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function click() {
+ if (event.button==2) {
+alert('The right mouse button is locked !!!');
+}
+}
+document.onmousedown=click
+// -->
+</SCRIPT>
+
+<TITLE>Main Menu</TITLE>
+
+</HEAD>
+
+<BODY ONLOAD="initTree();" BGCOLOR="#FFFFFF">
+
+<DIV ID="spacer"></DIV>
+<DIV ID="lItem0" NAME="lItem0"></DIV>
+<DIV ID="lItem1" NAME="lItem1"></DIV>
+<DIV ID="lItem2" NAME="lItem2"></DIV>
+<DIV ID="lItem3" NAME="lItem3"></DIV>
+<DIV ID="lItem4" NAME="lItem4"></DIV>
+<DIV ID="lItem5" NAME="lItem5"></DIV>
+<DIV ID="lItem6" NAME="lItem6"></DIV>
+<DIV ID="lItem7" NAME="lItem7"></DIV>
+<DIV ID="lItem8" NAME="lItem8"></DIV>
+<DIV ID="lItem9" NAME="lItem9"></DIV>
+<DIV ID="lItem10" NAME="lItem10"></DIV>
+<DIV ID="lItem11" NAME="lItem11"></DIV>
+<DIV ID="lItem12" NAME="lItem12"></DIV>
+<DIV ID="lItem13" NAME="lItem13"></DIV>
+<DIV ID="lItem14" NAME="lItem14"></DIV>
+<DIV ID="lItem15" NAME="lItem15"></DIV>
+<DIV ID="lItem16" NAME="lItem16"></DIV>
+<DIV ID="lItem17" NAME="lItem17"></DIV>
+<DIV ID="lItem18" NAME="lItem18"></DIV>
+<DIV ID="lItem19" NAME="lItem19"></DIV>
+<DIV ID="lItem20" NAME="lItem20"></DIV>
+<DIV ID="lItem21" NAME="lItem21"></DIV>
+<DIV ID="lItem22" NAME="lItem22"></DIV>
+<DIV ID="lItem23" NAME="lItem23"></DIV>
+<DIV ID="lItem24" NAME="lItem24"></DIV>
+<DIV ID="lItem25" NAME="lItem25"></DIV>
+
+</BODY>
+
+</HTML>
+
+
+
+
+
+
+
